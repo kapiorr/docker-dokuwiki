@@ -26,7 +26,7 @@ To make sure data won't be deleted if container is removed, create an empty cont
 
 ### Persistent plugins
 
-Dokuwiki installs plugins to `lib/plugins/`, but this folder isn't inside persistent volume storage by default, so all plugins will be erased when container is re-created.  The recommended way to make plugins persistent is to create your own Docker image with `istepanov/dokuwiki` as a base image and use shell commands inside the Dockerfile to install needed plugins.
+Dokuwiki installs plugins to `lib/plugins/`, but this folder isn't inside persistent volume storage by default, so all plugins will be erased when container is re-created.  The recommended way to make plugins persistent is to create your own Docker image with `kapiorr/dokuwiki` as a base image and use shell commands inside the Dockerfile to install needed plugins.
 
 Example (install [Dokuwiki ToDo](https://www.dokuwiki.org/plugin:todo) plugin):
 

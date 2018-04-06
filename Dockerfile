@@ -1,7 +1,7 @@
 FROM alpine:3.7
 MAINTAINER Ilya Stepanov <dev@ilyastepanov.com>
 
-ENV DOKUWIKI_VERSION latest
+ENV DOKUWIKI_VERSION stable
 ENV MD5_CHECKSUM 09bf175f28d6e7ff2c2e3be60be8c65f
 
 RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ add \

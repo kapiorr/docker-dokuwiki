@@ -74,5 +74,4 @@ Example (install [Dokuwiki ToDo](https://www.dokuwiki.org/plugin:todo) plugin):
     # start dokuwiki
     docker start dokuwiki
     
-    
-    kapior#2714 @ discord
+kapior#2714 @ discord

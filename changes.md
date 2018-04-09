@@ -8,7 +8,6 @@
   
 
 ### start.sh:
-
-* fix permision to:
-  * /var/tmp/
-  * /var/run/
+* fix permision to
+  * /var/tmp/
+  * /var/run/

@@ -48,7 +48,7 @@ Example (install [Dokuwiki ToDo](https://www.dokuwiki.org/plugin:todo) plugin):
 ### How to backup data
 
     # create dokuwiki-backup.tar.gz archive in current directory using temporaty container
-    docker run --rm --volumes-from dokuwiki -v $(pwd):/backup ubuntu tar zcvf /backup/dokuwiki-backup.tar.gz /var/dokuwiki-storage
+    docker run --rm --volumes-from dokuwiki -v $(pwd):/backup busybox tar zcvf /backup/dokuwiki-backup.tar.gz /var/dokuwiki-storage
 
 **Note:** only these folders are backed up:
 
@@ -69,7 +69,7 @@ Example (install [Dokuwiki ToDo](https://www.dokuwiki.org/plugin:todo) plugin):
     docker run --volumes-from dokuwiki --name dokuwiki-data busybox
 
     # restore from backup using temporary container
-    docker run --rm --volumes-from dokuwiki -w / -v $(pwd):/backup ubuntu tar xzvf /backup/dokuwiki-backup.tar.gz
+    docker run --rm --volumes-from dokuwiki -w / -v $(pwd):/backup busybox tar xzvf /backup/dokuwiki-backup.tar.gz
 
     # start dokuwiki
     docker start dokuwiki

@@ -1,3 +1,8 @@
+[![Docker Stars](https://img.shields.io/docker/stars/kapiorr/dokuwiki.svg)](https://hub.docker.com/r/kapiorr/dokuwiki/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/kapiorr/dokuwiki.svg)](https://hub.docker.com/r/kapiorr/dokuwiki/)
+[![Docker Build](https://img.shields.io/docker/automated/kapiorr/dokuwiki.svg)](https://hub.docker.com/r/kapiorr/dokuwiki/)
+
+
 #### Forked from istepanov/docker-dokuwiki
 
 

@@ -16,4 +16,4 @@
 ## 4.24.2018
 
 ### Dockerfile:
-* add php7-jason (new stable DokuWiki release "Greebo" requires json)
+* add php7-json (new stable DokuWiki release "Greebo" requires json)

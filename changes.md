@@ -11,3 +11,9 @@
 * fix permision to
   * /var/tmp/
   * /var/run/
+
+
+## 4.24.2018
+
+### Dockerfile:
+* add php7-jason (new stable DokuWiki release "Greebo" requires json)

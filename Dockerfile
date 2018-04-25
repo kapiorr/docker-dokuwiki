@@ -2,7 +2,7 @@ FROM alpine:3.7
 MAINTAINER Ilya Stepanov <dev@ilyastepanov.com>
 
 ENV DOKUWIKI_VERSION stable
-ENV MD5_CHECKSUM 09bf175f28d6e7ff2c2e3be60be8c65f
+ENV MD5_CHECKSUM cec26670452f0122807d4f812432df4d
 
 RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.7/community/ add \
     php7 php7-fpm php7-gd php7-json php7-session php7-xml php7-openssl nginx supervisor curl tar

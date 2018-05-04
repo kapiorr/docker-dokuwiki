@@ -17,3 +17,7 @@
 
 ### Dockerfile:
 * add php7-json (new stable DokuWiki release "Greebo" requires json)
+
+
+## 5.04.2018
+* add nginx 1.14.0 stable

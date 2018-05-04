@@ -8,9 +8,7 @@ RUN apk update
 RUN apk upgrade
 RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.7/community/ add \
     php7 php7-fpm php7-gd php7-json php7-session php7-xml php7-openssl supervisor curl tar
-RUN echo http://dl-cdn.alpinelinux.org/alpine/edge/community >> /etc/apk/repositories
-RUn apk update
-RUN apk add nginx
+RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ add nginx
 
 RUN mkdir -p /run/nginx && \
     mkdir -p /var/www /var/dokuwiki-storage/data && \

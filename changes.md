@@ -9,8 +9,8 @@
 
 ### start.sh:
 * fix permision to
-  * /var/tmp/
-  * /var/run/
+  - /var/tmp/
+  - /var/run/
 
 
 ## 4.24.2018

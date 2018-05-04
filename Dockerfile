@@ -4,6 +4,8 @@ MAINTAINER Ilya Stepanov <dev@ilyastepanov.com>
 ENV DOKUWIKI_VERSION stable
 ENV MD5_CHECKSUM cec26670452f0122807d4f812432df4d
 
+RUN apk update
+RUN apk upgrade
 RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community/ add \
     nginx
 RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.7/community/ add \

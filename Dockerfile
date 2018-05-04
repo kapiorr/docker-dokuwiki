@@ -6,6 +6,7 @@ ENV MD5_CHECKSUM cec26670452f0122807d4f812432df4d
 
 RUN apk update
 RUN apk upgrade
+
 RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.7/community/ add \
     php7 php7-fpm php7-gd php7-json php7-session php7-xml php7-openssl supervisor curl tar
 RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/main/ add nginx

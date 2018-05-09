@@ -12,7 +12,8 @@ Assume your docker host is localhost and HTTP public port is 8000 (change these 
 
 First, run new dokuwiki container:
 
-    docker run -d -p 8000:80 --name dokuwiki kapiorr/dokuwiki
+    docker volume create dokuwiki-data
+    docker run -d -p 8000:80 -v dokuwiki-data:/var/dokuwiki-storage  --name dokuwiki kapiorr/dokuwiki
 
 Wait minute or two...Then setup dokuwiki using installer at URL `http://localhost:8000/install.php`
 

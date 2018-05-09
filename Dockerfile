@@ -2,7 +2,7 @@ FROM alpine:3.7
 MAINTAINER Ilya Stepanov <dev@ilyastepanov.com>
 
 ENV DOKUWIKI_VERSION stable
-ENV MD5_CHECKSUM cec26670452f0122807d4f812432df4d
+ENV MD5_CHECKSUM 18765a29508f96f9882349a304bffc03
 
 RUN apk update
 RUN apk upgrade

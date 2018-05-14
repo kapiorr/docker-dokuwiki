@@ -31,6 +31,9 @@ RUN mkdir -p /run/nginx && \
     ln -s /var/dokuwiki-storage/data/attic /var/www/data/attic && \
     mv /var/www/conf /var/dokuwiki-storage/conf && \
     ln -s /var/dokuwiki-storage/conf /var/www/conf
+    mv /var/www/lib/plugins /var/dokuwiki-storage/plugins && \
+    ln -s /var/dokuwiki-storage/plugins /var/www/lib/plugins
+
 
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD supervisord.conf /etc/supervisord.conf

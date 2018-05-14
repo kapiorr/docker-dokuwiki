@@ -30,7 +30,7 @@ RUN mkdir -p /run/nginx && \
     mv /var/www/data/attic /var/dokuwiki-storage/data/attic && \
     ln -s /var/dokuwiki-storage/data/attic /var/www/data/attic && \
     mv /var/www/conf /var/dokuwiki-storage/conf && \
-    ln -s /var/dokuwiki-storage/conf /var/www/conf
+    ln -s /var/dokuwiki-storage/conf /var/www/conf && \
     mv /var/www/lib/plugins /var/dokuwiki-storage/plugins && \
     ln -s /var/dokuwiki-storage/plugins /var/www/lib/plugins
 
